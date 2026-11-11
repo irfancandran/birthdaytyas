@@ -1,17 +1,17 @@
-/* ===== 1. Mawar di hero ===== */
+/* ===== 1. Bunga di hero ===== */
 (function () {
   const wrap = document.getElementById('roses');
-  const ns = 'http://www.w3.org/2000/svg';
+  const files = ['f1','f2','f3','f4','f5','f6'];
   for (let i = 0; i < 30; i++) {
     let x, y;
     do { x = Math.random() * 100; y = Math.random() * 100; }
     while (Math.abs(x - 50) < 30 && Math.abs(y - 50) < 34);
     const size = 70 + Math.random() * 110;
-    const s = document.createElementNS(ns, 'svg');
-    s.setAttribute('viewBox', '0 0 100 100');
-    s.style.cssText = `left:${x}%;top:${y}%;width:${size}px;height:${size}px;margin:-${size / 2}px 0 0 -${size / 2}px;` +
+    const s = document.createElement('img');
+    s.src = 'img/' + files[i % files.length] + '.png';
+    s.alt = '';
+    s.style.cssText = `left:${x}%;top:${y}%;width:${size}px;margin:-${size / 2}px 0 0 -${size / 2}px;` +
       `--r:${Math.random() * 360}deg;animation-delay:${Math.random() * 0.6}s`;
-    s.innerHTML = '<use href="#rose"/>';
     wrap.appendChild(s);
   }
 })();
