@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selamat Ulang Tahun, Sayang</title>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Homemade+Apple&family=Great+Vibes&family=Caveat:wght@500;700&family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Simbol SVG: mawar & bintang (dipakai ulang) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rose" viewBox="0 0 100 100">
+    <ellipse cx="22" cy="78" rx="18" ry="8" fill="#3a2a22" transform="rotate(-30 22 78)"/>
+    <ellipse cx="80" cy="80" rx="18" ry="8" fill="#3a2a22" transform="rotate(30 80 80)"/>
+    <circle cx="50" cy="50" r="44" fill="#6b1122"/>
+    <circle cx="50" cy="50" r="34" fill="#861a30"/>
+    <circle cx="50" cy="50" r="23" fill="#a02a40"/>
+    <path d="M50 38c-8 0-13 6-13 12 0 8 6 12 13 12s13-5 13-11c0-5-4-8-9-8-4 0-7 3-7 6" fill="none" stroke="#4a0b18" stroke-width="3"/>
+    <path d="M24 42c5-12 18-17 28-13M76 60c-5 12-18 16-28 12" fill="none" stroke="#4a0b18" stroke-width="2.5"/>
+  </symbol>
+  <symbol id="star" viewBox="0 0 20 20"><path d="M10 0l2.4 7.6H20l-6.2 4.6 2.4 7.8L10 15.4 3.8 20l2.4-7.8L0 7.6h7.6z" fill="currentColor"/></symbol>
+  <symbol id="heart" viewBox="0 0 200 180">
+    <path d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="#fbf6ea" stroke="#a8432f" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+    <path d="M100 160C32 108 18 72 18 52 18 31 33 20 52 20c18 0 37 11 48 31 11-20 30-31 48-31 19 0 34 11 34 32 0 20-14 56-82 108z" fill="none" stroke="#a8432f" stroke-width="1.5" stroke-dasharray="8 4"/>
+  </symbol>
+</svg>
+
+<!-- ============ 1. HERO ============ -->
+<section id="hero">
+  <div id="roses"></div>
+  <div class="lace-heart">
+    <svg viewBox="0 0 200 180" class="heart-svg" aria-hidden="true">
+      <defs><clipPath id="heartClip"><path transform="translate(14 12.6) scale(.86)" d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z"/></clipPath></defs>
+      <path d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="#fbf6ea" stroke="#fbf6ea" stroke-width="16" stroke-linejoin="round"/>
+      <path d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="none" stroke="#fbf6ea" stroke-width="24" stroke-dasharray="0 11" stroke-linecap="round"/>
+      <path transform="translate(7 6.3) scale(.93)" d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="none" stroke="#c9b08a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <g clip-path="url(#heartClip)">
+        <rect width="200" height="180" fill="#cdb892"/>
+        <text x="100" y="88" text-anchor="middle" font-size="9" fill="#6b4a3a" font-family="Special Elite,monospace">Foto cover: img/cover.jpg</text>
+        <!-- GANTI foto cover: taruh file di img/cover.jpg -->
+        <image href="img/cover.jpg" width="200" height="180" preserveAspectRatio="xMidYMid slice"/>
+      </g>
+    </svg>
+    <!-- foto kecil di pojok (opsional): ganti dengan <img src="img/mini1.jpg" alt=""> -->
+    <div class="mini m1 ph">Foto</div>
+    <div class="mini m2 ph">Foto</div>
+    <div class="hero-text">
+      <p class="serif-it">The Best Part of Every Year Since 2021</p>
+      <h1 class="script">Selamat Ulang Tahun, Sayang</h1>
+    </div>
+  </div>
+  <a href="#playlist" class="scroll-hint" aria-label="Gulir ke bawah">&#9662;</a>
+</section>
+
+<!-- ============ 2. PLAYLIST ============ -->
+<section id="playlist" class="reveal">
+  <h2 class="script">Our Playlist</h2>
+  <div class="player">
+    <div class="vinyl" id="vinyl"><div class="label"><span class="script">us</span></div></div>
+    <div class="info">
+      <p id="trackTitle" class="typewriter big">Judul Lagu 1</p>
+      <p id="trackArtist" class="typewriter small">Artis</p>
+      <input type="range" id="seek" min="0" max="100" value="0" aria-label="Posisi lagu">
+      <div class="times typewriter small"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+      <div class="controls">
+        <button id="prev" aria-label="Sebelumnya">&#9198;</button>
+        <button id="play" class="main" aria-label="Putar/Jeda">&#9654;</button>
+        <button id="next" aria-label="Berikutnya">&#9197;</button>
+      </div>
+    </div>
+    <audio id="audio" preload="none"></audio>
+  </div>
+</section>
+
+<!-- ============ 3. WISHES ============ -->
+<section id="wishes" class="reveal">
+  <h2 class="script">Wishes dari Teman-temen</h2>
+  <div class="swiper wish-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 1</div>
+        <h4>Teman 1</h4>
+        <p>Tulis ucapan Teman 1 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 2</div>
+        <h4>Teman 2</h4>
+        <p>Tulis ucapan Teman 2 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 3</div>
+        <h4>Teman 3</h4>
+        <p>Tulis ucapan Teman 3 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 4</div>
+        <h4>Teman 4</h4>
+        <p>Tulis ucapan Teman 4 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 5</div>
+        <h4>Teman 5</h4>
+        <p>Tulis ucapan Teman 5 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 6</div>
+        <h4>Teman 6</h4>
+        <p>Tulis ucapan Teman 6 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 7</div>
+        <h4>Teman 7</h4>
+        <p>Tulis ucapan Teman 7 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 8</div>
+        <h4>Teman 8</h4>
+        <p>Tulis ucapan Teman 8 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 9</div>
+        <h4>Teman 9</h4>
+        <p>Tulis ucapan Teman 9 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 10</div>
+        <h4>Teman 10</h4>
+        <p>Tulis ucapan Teman 10 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 11</div>
+        <h4>Teman 11</h4>
+        <p>Tulis ucapan Teman 11 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 12</div>
+        <h4>Teman 12</h4>
+        <p>Tulis ucapan Teman 12 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 13</div>
+        <h4>Teman 13</h4>
+        <p>Tulis ucapan Teman 13 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 14</div>
+        <h4>Teman 14</h4>
+        <p>Tulis ucapan Teman 14 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 15</div>
+        <h4>Teman 15</h4>
+        <p>Tulis ucapan Teman 15 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 16</div>
+        <h4>Teman 16</h4>
+        <p>Tulis ucapan Teman 16 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 17</div>
+        <h4>Teman 17</h4>
+        <p>Tulis ucapan Teman 17 di sini.</p>
+      </div>
+      <div class="swiper-slide wish-card">
+        <div class="ph">Foto 18</div>
+        <h4>Teman 18</h4>
+        <p>Tulis ucapan Teman 18 di sini.</p>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- ============ 4. JOURNEY ============ -->
+<section id="journey" class="reveal">
+  <h2 class="script">Our Journey</h2>
+  <div class="tl">
+    <article class="node">
+      <div class="ticket"><span class="stamp">2021</span>
+        <h3 class="typewriter">Tahun 2021</h3>
+        <p class="hand">Awal mula cerita kita. (Ganti dengan ceritamu.)</p></div>
+    </article>
+    <article class="node">
+      <div class="ticket"><span class="stamp">DES 2025</span>
+        <h3 class="typewriter">Desember 2025</h3>
+        <p class="hand">Momen aku melamarmu. (Ganti dengan ceritamu.)</p></div>
+    </article>
+    <article class="node">
+      <div class="ticket"><span class="stamp">MEI 2026</span>
+        <h3 class="typewriter">Mei 2026</h3>
+        <p class="hand">Retreat dan body rafting kita di Batu Karas &amp; Green Canyon. (Ganti dengan ceritamu.)</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 5. 10 REASONS ============ -->
+<section id="reasons" class="reveal">
+  <h2 class="script">10 Reasons Why I Love You</h2>
+  <div class="cork">
+    <div class="note"><i class="pin"></i>
+      <ol class="hand">
+        <li>Alasan pertama...</li><li>Alasan kedua...</li><li>Alasan ketiga...</li>
+        <li>Alasan keempat...</li><li>Alasan kelima...</li><li>Alasan keenam...</li>
+        <li>Alasan ketujuh...</li><li>Alasan kedelapan...</li><li>Alasan kesembilan...</li>
+        <li>Alasan kesepuluh...</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. POJOK SASTRA ============ -->
+<section id="sastra" class="reveal">
+  <h2 class="script">Pojok Sastra</h2>
+  <div class="paper typewriter">
+    <h3>Judul Esaimu di Sini</h3>
+    <p>Paragraf pembuka tentang resiliensi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Paragraf kedua tentang perjalanan kita. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Paragraf ketiga tentang indahnya hubungan kita. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <p>Paragraf penutup. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+  </div>
+</section>
+
+<!-- ============ 7. GALERI ============ -->
+<section id="gallery" class="reveal">
+  <h2 class="script">Galeri Kita</h2>
+  <!-- Ganti tiap <div class="ph"> dengan: <img src="img/fotoX.jpg" alt="..."> -->
+  <div class="collage">
+    <figure class="polaroid p1"><i class="tape"></i><div class="ph">Foto 1</div><figcaption class="hand">caption 1</figcaption></figure>
+    <figure class="polaroid p2"><i class="tape"></i><div class="ph">Foto 2</div><figcaption class="hand">caption 2</figcaption></figure>
+    <div class="film"><div class="ph">Foto 3</div><div class="ph">Foto 4</div><div class="ph">Foto 5</div></div>
+    <figure class="polaroid p3"><i class="tape"></i><div class="ph">Foto 6</div><figcaption class="hand">caption 6</figcaption></figure>
+    <figure class="polaroid p4"><i class="tape"></i><div class="ph">Foto 7</div><figcaption class="hand">caption 7</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ 8. LETTER ============ -->
+<section id="letter" class="reveal">
+  <h2 class="script">A Letter to You</h2>
+  <div class="notebook hand">
+    <div class="lace-photo">
+      <svg viewBox="0 0 200 180"><use href="#heart"/></svg>
+      <div class="ph">Fotomu</div>
+    </div>
+    <p>Sayangku,</p>
+    <p>Tulis suratmu di sini. Ceritakan apa yang kamu rasakan, apa yang kamu syukuri, dan apa yang kamu doakan untuknya di usia yang baru.</p>
+    <p>Paragraf kedua suratmu. Semoga tahun ini membawa lebih banyak tawa, lebih banyak petualangan, dan lebih banyak kita.</p>
+    <p class="sign">Selalu milikmu,<br>Irfan</p>
+  </div>
+</section>
+
+<!-- ============ 9. MAKE A WISH ============ -->
+<section id="wish" class="reveal">
+  <h2 class="script">Sekarang, giliranmu make a wish...</h2>
+  <div class="wish-form">
+    <label for="wishText" class="typewriter">Tulis harapanmu di ulang tahun ini:</label>
+    <textarea id="wishText" rows="6" placeholder="Semoga tahun ini..."></textarea>
+    <button id="sendWish" class="send">Kirim Wish ke Irfan</button>
+    <p id="wishMsg" class="typewriter small" role="status"></p>
+  </div>
+  <footer class="typewriter small">Dibuat dengan cinta &#10022; Irfan</footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
