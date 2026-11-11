@@ -8,7 +8,6 @@
     while (Math.abs(x - 50) < 30 && Math.abs(y - 50) < 34);
     const size = 70 + Math.random() * 110;
     const s = document.createElement('img');
-    s.src = 'img/' + files[i % files.length] + '.png';
     s.alt = '';
     s.style.cssText = `left:${x}%;top:${y}%;width:${size}px;margin:-${size / 2}px 0 0 -${size / 2}px;` +
       `--r:${Math.random() * 360}deg;animation-delay:${Math.random() * 0.6}s`;
