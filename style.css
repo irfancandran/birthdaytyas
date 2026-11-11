@@ -146,3 +146,32 @@ footer{margin-top:50px;color:var(--cream);opacity:.7}
  *{animation-duration:.01s!important;animation-delay:0s!important;transition:none!important}
  .reveal{opacity:1;transform:none}
 }
+
+/* ===== Revisi: gaya mengikuti template referensi ===== */
+:root{--serif:'Cormorant Garamond',serif}
+h2.script,.script{font-family:'Allura','Great Vibes',cursive}
+h2.script{font-size:clamp(2.8rem,7vw,4.6rem)}
+.serif-it{font-family:var(--serif);font-style:italic;font-weight:600}
+/* cover: latar garis-garis marun + mawar mekar */
+#hero{background:radial-gradient(ellipse at center,#0000 40%,#1d0409cc 100%),repeating-linear-gradient(90deg,#6b1222 0 7px,#5a0f1f 7px 14px)}
+.lace-heart{width:min(86vw,520px)}
+.heart-svg{overflow:visible}
+.mini{position:absolute;width:17%;aspect-ratio:3/4;border:4px solid var(--ivory);box-shadow:0 4px 10px #0007;font-size:.65rem;overflow:hidden}
+.mini.m1{right:-9%;top:4%;transform:rotate(4deg)}
+.mini.m2{right:-13%;top:30%;transform:rotate(-4deg)}
+.hero-text{inset:auto;left:-4%;bottom:-3%;width:78%;align-items:flex-start;text-align:left;color:var(--ivory);animation:up2 1s ease-out 1.5s forwards;transform:translateY(24px) rotate(-7deg)}
+@keyframes up2{to{opacity:1;transform:rotate(-7deg)}}
+.hero-text .serif-it{font-size:clamp(.75rem,2.6vw,1.1rem);margin-bottom:0;text-shadow:0 1px 6px #000a}
+.hero-text h1{font-size:clamp(2.1rem,8.5vw,4rem);color:var(--ivory);text-shadow:0 2px 0 #5a0f1f,0 0 14px #000a}
+/* playlist krem berbintik */
+#playlist{background:#f3e6cf radial-gradient(#d9a7a0 1.6px,transparent 2px) 0 0/22px 22px}
+#playlist h2.script,#gallery h2.script{color:var(--maroon);text-shadow:0 0 12px #f3e6cf}
+/* galeri kotak-kotak merah krem */
+#gallery{background:repeating-linear-gradient(0deg,#a8432f59 0 30px,transparent 30px 60px),repeating-linear-gradient(90deg,#a8432f59 0 30px,transparent 30px 60px),#efe0c6}
+/* tipografi serif & tulisan tangan seperti template */
+.note ol{font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.5rem;color:var(--maroon)}
+.notebook{font-family:'Homemade Apple',cursive;font-size:1.05rem;line-height:34px;color:#5a0f1f}
+.notebook .sign{font-size:1.2rem}
+.wish-card h4{font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.35rem}
+.ticket h3{font-family:var(--serif);font-style:italic;font-weight:600}
+@media(max-width:700px){.notebook{font-size:.9rem}.mini.m1{right:-4%}.mini.m2{right:-6%}}
