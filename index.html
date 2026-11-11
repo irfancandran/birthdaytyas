@@ -32,26 +32,20 @@
 <section id="hero">
   <div id="roses"></div>
   <div class="lace-heart">
-    <svg viewBox="0 0 200 180" class="heart-svg" aria-hidden="true">
-      <defs><clipPath id="heartClip"><path transform="translate(14 12.6) scale(.86)" d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z"/></clipPath></defs>
-      <path d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="#fbf6ea" stroke="#fbf6ea" stroke-width="16" stroke-linejoin="round"/>
-      <path d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="none" stroke="#fbf6ea" stroke-width="24" stroke-dasharray="0 11" stroke-linecap="round"/>
-      <path transform="translate(7 6.3) scale(.93)" d="M100 172C20 112 5 72 5 50 5 24 25 9 50 9c20 0 40 12 50 32C110 21 130 9 150 9c25 0 45 15 45 41 0 22-15 62-95 122z" fill="none" stroke="#c9b08a" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <g clip-path="url(#heartClip)">
-        <rect width="200" height="180" fill="#cdb892"/>
-        <text x="100" y="88" text-anchor="middle" font-size="9" fill="#6b4a3a" font-family="Special Elite,monospace">Foto cover: img/cover.jpg</text>
-        <!-- GANTI foto cover: taruh file di img/cover.jpg -->
-        <image href="img/cover.jpg" width="200" height="180" preserveAspectRatio="xMidYMid slice"/>
-      </g>
-    </svg>
-    <!-- foto kecil di pojok (opsional): ganti dengan <img src="img/mini1.jpg" alt=""> -->
-    <div class="mini m1 ph">Foto</div>
-    <div class="mini m2 ph">Foto</div>
-    <div class="hero-text">
-      <p class="serif-it">The Best Part of Every Year Since 2021</p>
-      <h1 class="script">Selamat Ulang Tahun, Sayang</h1>
-    </div>
+    <div id="roses"></div>
+<div class="lace-heart">
+  <div class="cover-photo">
+    <span>Foto cover: img/cover.jpg</span>
+    <img src="img/cover.jpg" alt="" onerror="this.remove()">
   </div>
+  <img class="frame" src="img/frame.png" alt="">
+  <div class="mini m1 ph">Foto</div>
+  <div class="mini m2 ph">Foto</div>
+  <div class="hero-text">
+    <p class="serif-it">The Best Part of Every Year Since 2021</p>
+    <h1 class="script">Selamat Ulang Tahun, Sayang</h1>
+  </div>
+</div>
   <a href="#playlist" class="scroll-hint" aria-label="Gulir ke bawah">&#9662;</a>
 </section>
 
